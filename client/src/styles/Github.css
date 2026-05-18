@@ -1,0 +1,32 @@
+.github {
+  background: var(--bg-2);
+}
+
+.github-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.github-card {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.github-streak {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.github-streak-img {
+  max-width: 600px;
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 640px) {
+  .github-stats { grid-template-columns: 1fr; }
+}
